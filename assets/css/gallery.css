@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+
+body {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to bottom, #e8d6b0, #eec59e, #e7bcad, #dfc9a7, #c7c9a9);
+} 
+
+#navbar{
+  position: sticky;
+  top: 0;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #e8d6b0 ;
+}
+
+
+ #back {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1%;
+  width: 63px;
+  padding: 5px 8px;
+  font-size: 23px;
+  list-style: none;
+  border-radius: 10%;
+  background-color: rgb(174, 201, 191);
+}
+
+ #back a {
+  text-decoration: none;
+}
+
+.title {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    font-size: 17px;
+    color: black;
+}
+
+.git {
+  position: absolute;
+  right: 1%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-size: 17px;
+  color:black;
+  border: 1px solid black;
+  padding: 7px;
+} 
+
+
+
+  .img-grid {
+    width: 100%;
+    height: auto;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between; 
+  } 
+  
+  .weekly-img {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    min-width: 60%;
+    max-width: 900px;
+    height: 550px;
+    box-shadow: 3px 3px 8px 2px rgba(0,0,0,0.3); 
+  }
+ 
+
+  .img-todo {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    min-width: 49%;
+    max-width: 900px;
+    height: 550px;
+    box-shadow: 3px 3px 8px 2px rgba(0,0,0,0.3); 
+  }
+
+  .resume-img {
+    margin: 0 0px 48px 0px;
+    min-width: 49%;
+    max-width: 950px;
+    height: 550px;
+    border: 1px solid white; 
+  }
+
+  @media only screen and (max-width: 768px) {
+    #back {width: 48px; font-size: 16px; }
+    .title {font-size: 13px; }
+    .git {font-size: 11px; padding-left: 3px;} 
+    .resume-img {width: 300px; height: 250px; }
+    .img-todo {width: 300px; height: 250px; margin-bottom: 30px; }
+    .weekly-img {width: 300px; height: 250px; margin-bottom: 30px;}
+  }
+
+  @media only screen and (width: 768px) {
+    .resume-img {width: 600px; height: 340px; }
+    .img-todo {width: 600px; height: 340px; margin-bottom: 50px;}
+    .weekly-img {width: 600px; height: 340px; margin-bottom: 50px;}
+  }
+
+  
